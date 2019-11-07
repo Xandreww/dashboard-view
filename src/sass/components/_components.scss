@@ -1,0 +1,62 @@
+/* icons */
+@mixin icon {
+  width: 20px;
+  height: 20px;
+  color: $color-grey-light;
+}
+
+/* dot */
+@mixin dot {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: $color-green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Buttons */
+@mixin button {
+  color: $color-light;
+  border: none;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-grey {
+  @include button;
+  background: $color-grey;
+
+  &:hover {
+    background: $color-grey-light;
+  }
+}
+
+.button-orange {
+  @include button;
+  background: $color-orange;
+
+  &:hover {
+    background: $color-orange-light;
+  }
+}
+
+.button-disabled {
+  @include button;
+  background: lighten($color-grey-light, 3%);
+}
+
+/* links */
+a {
+  text-decoration: none; // no underline
+  color: $color-blue;
+
+  &:hover {
+    color: $color-orange-light;
+    // cursor: pointer;
+  }
+}
