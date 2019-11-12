@@ -1,0 +1,318 @@
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+.container {
+  margin: 0 18%;
+}
+
+.choose-dates {
+  @include border-bottom;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  position: relative;
+
+  .date-1,
+  .date-2 {
+    height: 60px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .date-1 {
+    border-left: 1px solid $color-blue;
+    border-top: 1px solid $color-blue;
+    border-bottom: 1px solid $color-blue;
+    border-radius: $radius 0 0 $radius;
+  }
+
+  .date-2 {
+    @include flex-center;
+    border-top: 1px solid $color-blue;
+    border-bottom: 1px solid $color-blue;
+    border-right: 1px solid $color-blue;
+    border-radius: 0 $radius $radius 0;
+    flex-direction: row;
+
+    .icon-calendar {
+      margin-left: 0;
+      margin-top: 6px;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.5);
+        background-color: $color-orange;
+      }
+    }
+  }
+
+  .vl {
+    border-left: 1px solid $color-blue;
+    height: 80%;
+    display: inline-block;
+  }
+
+  p {
+    padding-right: 60%;
+    padding-left: 20px;
+    width: 90%;
+    font-size: 20px;
+  }
+
+  img {
+    margin: 0 20px;
+  }
+
+  .icon-refresh {
+    height: 60px;
+    width: 60px;
+    background-color: #f58220;
+    padding: 18px;
+    border-radius: $radius;
+    transition: transform 0.6s ease-in-out;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.category-and-numbers-section {
+  @include flex-center;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+
+  .col-1,
+  .col-2 {
+    width: 100%;
+  }
+
+  .col-1 {
+    margin-right: 5%;
+  }
+
+  .col-2 {
+    margin-left: 5%;
+  }
+
+  .single-category-and-numbers {
+    @include flex-center;
+    @include border-bottom;
+    justify-content: space-between;
+    flex: 50%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.earnings-chart {
+  padding-top: 50px;
+
+  h4 {
+    padding: 15px 0;
+  }
+
+  img {
+    padding: 50px 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.links-section .container {
+  padding: 50px 0;
+}
+
+.list-of-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  li {
+    @include border-bottom;
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      display: inline-block;
+      color: $color-grey;
+      padding: 0 40px 0 20px;
+    }
+
+    .icon {
+      opacity: 0;
+      margin-right: 30px;
+    }
+  }
+
+  li:hover {
+    background-color: $color-grey-light;
+
+    .icon {
+      opacity: 1;
+    }
+  }
+
+  .border-top {
+    @include border-top;
+  }
+}
+
+.button-orange {
+  @include button-orange;
+  display: block;
+  margin: 0 auto;
+}
+
+/* media */
+@media (max-width: 1440px) {
+  // laptop - L
+  .choose-dates p {
+    width: 90%;
+  }
+
+  .choose-dates .date-2 .icon-calendar {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  // tablet
+
+  .choose-dates .date-2 .icon-calendar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .category-and-numbers-section p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  // mobile - L
+  h3 {
+    font-size: 10px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .category-and-numbers-section p {
+    font-size: 13px;
+  }
+
+  .choose-dates,
+  .category-and-numbers-section,
+  .earnings-chart img,
+  .links-section .container {
+    padding: 40px 0;
+  }
+
+  .earnings-chart {
+    padding-top: 40px;
+  }
+
+  .choose-dates .icon-refresh {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .choose-dates img {
+    margin: 0 10px;
+  }
+
+  .choose-dates p {
+    padding-right: 60%;
+    padding-left: 20px;
+    width: 80%;
+    font-size: 17px;
+  }
+
+  .button-orange {
+    width: 100px;
+    height: 35px;
+  }
+
+  .list-of-links li p {
+    padding: 0 25px 0 2px;
+  }
+
+  .choose-dates .date-1,
+  .choose-dates .date-2 {
+    height: 40px;
+  }
+
+  .manager-section .manager .dot-sidebar {
+    top: 455px;
+    left: 70px;
+  }
+}
+
+@media (max-width: 375px) {
+  // mobile - M
+  .choose-dates p {
+    padding-right: 30%;
+    font-size: 16px;
+  }
+
+  .choose-dates .date-2 .icon-calendar {
+    width: 13px;
+    height: 13px;
+    margin-bottom: 5px;
+  }
+
+  .choose-dates .date-1,
+  .choose-dates .date-2 {
+    height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  // mobile - S
+  .choose-dates p {
+    padding-left: 7px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .category-and-numbers-section p {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .earnings-chart {
+    padding-top: 0px;
+  }
+
+  .choose-dates,
+  .category-and-numbers-section,
+  .earnings-chart img,
+  .links-section .container {
+    padding: 40px 0 30px 0;
+  }
+
+  .choose-dates .date-1,
+  .choose-dates .date-2 {
+    height: 40px;
+  }
+}

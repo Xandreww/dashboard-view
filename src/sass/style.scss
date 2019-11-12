@@ -4,7 +4,6 @@
 /* następnie importuje pliki które faktycznie pojawią się w naszym CSS */
 @import 'normalize';
 @import 'global';
-@import 'layout';
 
 /* Components */
 @import 'components/components';
@@ -12,6 +11,4 @@
 /* Sections */
 @import 'sections/sidebar';
 @import 'sections/navbar';
-
-/* Pages / Views */
-//import 'pages/registration';
+@import 'sections/general-statistic';

@@ -1,27 +1,38 @@
 /* sidebar-section general */
 .sidebar-section {
   position: fixed;
-  // max-width: 20%;
-  width: 180px;
+  width: 0;
+  width: 0;
   background-color: $color-dark;
-  z-index: 1;
+  z-index: 2;
   height: 100%;
   overflow: auto;
 }
 
-/* header section */
-.sidebar-header {
-  color: $color-light;
-  font-family: 'Satisfy', cursive;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
+.sidebar-active {
+  width: 180px;
+}
 
-  i {
-    padding: 0 15px 0 20px;
+/* header section */
+.sidebar-heading {
+  @include flex-center;
+
+  h1 {
+    color: $color-light;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    padding-top: 10px;
   }
+
+  a {
+    display: block;
+    padding: 10px 10px 0 20px;
+    font-size: 25px;
+  }
+}
+
+.sidebar-header a:hover {
+  color: $color-orange;
 }
 
 /* sidebar-list */
@@ -30,6 +41,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
+  line-height: 1;
 
   li a {
     display: flex;
@@ -39,8 +51,7 @@
     align-items: center;
     border-left: 10px solid $color-dark;
 
-    &:hover,
-    .active {
+    &:hover {
       color: $color-light;
       background-color: $color-grey;
       border-left: 8px solid $color-orange;
@@ -49,19 +60,16 @@
 }
 
 /* manager section column */
-
 .sidebar-managers {
   padding-top: 20px;
   border-top: 2px solid $color-blue;
 }
 
 .manager-section {
-  padding: 0 13px;
+  padding: 0 13px 15px 13px;
 
   .manager {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 
     img {
       width: 55px;
@@ -73,8 +81,8 @@
 
     .dot-sidebar {
       @include dot;
-      top: 495px;
-      left: 54px;
+      top: 465px;
+      left: 60px;
     }
 
     p {
@@ -90,26 +98,78 @@ h2 {
   color: $color-grey-light;
 }
 
-// @media screen and (max-width: 900px) {
-//   ul.sidenav {
-//     width: 100%;
-//     height: auto;
-//     position: relative;
-//   }
+/* sidebar-closed */
+.sidebar-section-closed {
+  position: fixed;
+  width: 0;
+  height: 60px;
+  background-color: $color-dark;
+  z-index: 2;
+  overflow: auto;
 
-//   ul.sidenav li a {
-//     float: left;
-//     padding: 15px;
-//   }
+  a {
+    display: block;
+    padding: 8px 10px 0 17px;
+    font-size: 25px;
 
-//   div.content {
-//     margin-left: 0;
-//   }
-// }
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
 
-// @media screen and (max-width: 400px) {
-//   ul.sidenav li a {
-//     text-align: center;
-//     float: none;
-//   }
-// }
+.sidebar-hamburger-only {
+  width: 60px;
+  height: 55px;
+  border-radius: 0 $radius $radius 0;
+}
+
+/* nav in sidebar */
+.sidebar-list .leonardo {
+  font-size: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+
+    a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: $color-dark;
+  background-color: black;
+}
+
+.two-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  li {
+    width: 100%;
+
+    .link-notofication {
+      border-left: none;
+      border-right: 8px solid $color-dark;
+    }
+
+    .link-notofication:hover {
+      border-left: none;
+      border-right: 8px solid $color-orange;
+    }
+  }
+}

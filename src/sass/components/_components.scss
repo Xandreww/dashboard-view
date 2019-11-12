@@ -25,9 +25,11 @@
   padding: 0;
   text-decoration: none;
   text-align: center;
+  width: 125px;
+  height: 40px;
 }
 
-.button-grey {
+@mixin button-grey {
   @include button;
   background: $color-grey;
 
@@ -36,7 +38,7 @@
   }
 }
 
-.button-orange {
+@mixin button-orange {
   @include button;
   background: $color-orange;
 
@@ -45,7 +47,7 @@
   }
 }
 
-.button-disabled {
+@mixin button-disabled {
   @include button;
   background: lighten($color-grey-light, 3%);
 }
@@ -57,6 +59,48 @@ a {
 
   &:hover {
     color: $color-orange-light;
-    // cursor: pointer;
   }
+}
+
+/* borders */
+.border {
+  border: 15px solid #f2f2f2;
+  border-collapse: collapse;
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid $color-blue;
+}
+
+@mixin border-top {
+  border-top: 1px solid $color-blue;
+}
+
+@mixin border-all {
+  border: 1px solid $color-blue;
+}
+
+/* headers */
+@mixin h3 {
+  @include border-bottom;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: $color-grey;
+  font-weight: $font-weight-normal;
+  margin: 0;
+  padding: 20px 15px;
+}
+
+@mixin h4 {
+  @include h3;
+  font-size: 20px;
+  border: none;
+  padding: 0;
+}
+
+/* flex */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -10,12 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Oswald:400,500,600,700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <section class="sidebar-section">
-      <!-- <div class="sidebar-container"> -->
+    <section class="sidebar-section sidebar-active" id="sidebar-active">
       <div class="sidebar-heading">
-        <h1 class="sidebar-header">
-          Just do it <a href=""><i class="fas fa-bars"></i></a>
-        </h1>
+        <h1 class="sidebar-header">Just do it</h1>
+        <a href="#" id="hamburger-sidebar-on"><i class="fas fa-bars"></i></a>
       </div>
       <ul class="sidebar-list">
         <li>
@@ -50,11 +48,45 @@
           </a>
           </div>
         </div>
+        <!-- nav list from top -->
+        <ul class="sidebar-list hide" id="sidebar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">
+              <img class="icon mr-10 mb-5" src="images/icons/wallet.svg">
+              <p>$1,500.00</p>
+              <img class="icon icon-nav-arrow" src="images/icons/arrow-down-small.svg">
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+          </li>
+          <li>
+            <a href=""><img class="icon mr-10" src="images/icons/profile.svg"><p>Leonardo Dicaprio</p></a>
+          </li>
+          <div class="two-icons">
+            <li>
+              <a href=""><img class="icon" src="images/icons/quit.svg"></a>
+            </li>
+            <li>
+              <a href="#" class="link-notofication">
+                <img class="icon icon-notification" src="images/icons/notification.svg">
+                <span class="dot"></span>
+              </a>
+            </li>
+          </div>
+        
+      </ul>
+      <!-- nav from top ends here -->
       </div>
-      <!-- </div> -->
+      <!-- sidebar section ends here -->
     </section>
-    <section class="content">
-      <section class="nav">
+    <section class="sidebar-section-closed" id="sidebar-closed">
+      <a href="#" id="hamburger-sidebar-off"><i class="fas fa-bars"></i></a>
+    </section>
+    <section class="content content-active" id="content">
+      <section class="nav" id="nav">
         <ul class="nav-list">
             <li><a href=""><img class="icon-nav" src="images/icons/quit.svg"></a></li>
             <li><a href=""><img class="icon-nav mr-10" src="images/icons/profile.svg">Leonardo Dicaprio</a>
@@ -79,12 +111,155 @@
           </li>
         </ul>
       </section>
-        <div class="wrapper">
-          <div class="container">
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aliquam asperiores iusto consequatur delectus rerum.</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus exercitationem aspernatur maxime rerum ducimus sit incidunt quia sint fugiat ipsam adipisci mollitia odit alias dolore harum enim perspiciatis quis eos veritatis cupiditate saepe, laudantium nisi molestias! Assumenda molestias vel nemo quibusdam, debitis eos aliquam illo id rerum nihil consequuntur consequatur!</p>
-      </div>
+        <div class="wrapper" id="wrapper">
+          <section class="general-statistic">
+          <div class="border">
+            <div>
+              <h3>GENERAL STATISTIC</h3>
+            </div>
+            <div class="choose-dates">
+              <div class="date-1">
+                <p>16.05.2016</p>
+              </div>
+              <!-- <span class="vl"></span> -->
+              <div class="date-2">
+                <div class="vl"></div>
+                <p>16.05.2016</p>
+                <a href="#"><img class="icon icon-calendar" src="images/icons/calendar.svg"></a>
+              </div>
+              <a href="#"><img class="icon icon-refresh" src="images/icons/refresh.svg"></a>
+            <!-- choose dates ends here -->
+            </div>
+            <div class="chart-section">
+              <div class="container">
+              <div class="category-and-numbers-section">
+                <div class="col-1">
+                  <div class="single-category-and-numbers">
+                    <h4>Visit Signups</h3>
+                    <p>124</p>
+                  </div>
+                  <div class="single-category-and-numbers">
+                    <h4>FTD</h3>
+                    <p>445</p>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="single-category-and-numbers">
+                    <h4>Net deposit</h3>
+                    <p>564</p>
+                  </div>
+                  <div class="single-category-and-numbers">
+                    <h4>Turn Over</h3>
+                    <p>432</p>
+                  </div>
+                </div>
+              </div>
+                <!-- category-and-numbers ends here -->
+              </div>
+              <div class="container">
+                <div class="earnings-chart">
+                  <h4>Earnings chart</h4>
+                  <img src="images/chart1.png">
+                </div>
+              </div>
+            <!-- chart section ends here -->
+            </div>
+          <!-- first border ends here -->
+          </div>
+          <div class="border">
+            <div class="links-section">
+              <h3>LINKS</h3>
+              <div class="container">
+                <button class="button-orange">+ add new</button>
+                <ul class="list-of-links">
+                  <li class="border-top">
+                    <p>Home Page</p>
+                    <a href="#">http://www.homepage.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Currently offer</p>
+                    <a href="#">http://www.currentlyoffer.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Bluprix</p>
+                    <a href="#">http://www.bluprix.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Your Site</p>
+                    <a href="#">http://www.yoursite.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Google</p>
+                    <a href="#">http://www.google.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Facebook</p>
+                    <a href="#">http://www.facebook.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Dashboard</p>
+                    <a href="#">http://www.dashboard.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Blurax</p>
+                    <a href="#">http://www.blurax.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Piece of Wine</p>
+                    <a href="#">http://www.pieceofwine.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Twitter</p>
+                    <a href="#">http://www.twitter.com</a>
+                    <div class="link-icons">
+                      <a href="#"><img class="icon" src="images/icons/links.svg"></a>
+                      <a href="#"><img class="icon" src="images/icons/trash.svg"></a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="button-orange">+ add new</button>
+              </div>
+            </div>
+          </div>
+        </section>
         </div>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
