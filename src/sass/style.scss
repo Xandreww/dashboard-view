@@ -1,14 +1,15 @@
 /* pierwszy importujemy variables, aby każdy z plików miał swobodny dostęp do zmiennych */
-@import 'settings';
+@import "settings";
 
 /* następnie importuje pliki które faktycznie pojawią się w naszym CSS */
-@import 'normalize';
-@import 'global';
+@import "normalize";
+@import "global";
 
 /* Components */
-@import 'components/components';
+@import "components/components";
 
 /* Sections */
-@import 'sections/sidebar';
-@import 'sections/navbar';
-@import 'sections/general-statistic';
+@import "sections/sidebar";
+@import "sections/navbar";
+@import "sections/general-statistic";
+@import "sections/personal_data";

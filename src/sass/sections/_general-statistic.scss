@@ -131,46 +131,38 @@ h4 {
   }
 }
 
-.links-section .container {
+/* list of links */
+.links-article .container {
   padding: 50px 0;
 }
 
-.list-of-links {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+.list-of-links .row {
+  @include border-bottom;
+}
 
-  li {
-    @include border-bottom;
-    list-style-type: none;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.list-of-links li {
+  list-style-type: none;
 
-    p {
-      display: inline-block;
-      color: $color-grey;
-      padding: 0 40px 0 20px;
-    }
-
-    .icon {
-      opacity: 0;
-      margin-right: 30px;
-    }
+  p {
+    color: $color-grey;
+    padding-left: 20px;
   }
 
-  li:hover {
-    background-color: $color-grey-light;
-
-    .icon {
-      opacity: 1;
-    }
+  .icon {
+    opacity: 0;
   }
+}
 
-  .border-top {
-    @include border-top;
+.list-of-links .row:hover {
+  background-color: $color-grey-light;
+
+  .icon {
+    opacity: 1;
   }
+}
+
+.border-top {
+  @include border-top;
 }
 
 .button-orange {
@@ -181,7 +173,7 @@ h4 {
 
 /* media */
 @media (max-width: 1440px) {
-  // laptop - L
+  // laptop
   .choose-dates p {
     width: 90%;
   }
@@ -202,6 +194,17 @@ h4 {
 
   .category-and-numbers-section p {
     font-size: 18px;
+  }
+
+  .list-of-links li {
+    p {
+      text-align: center;
+    }
+
+    a {
+      padding-left: 20px;
+      display: block;
+    }
   }
 }
 
@@ -253,10 +256,6 @@ h4 {
     height: 35px;
   }
 
-  .list-of-links li p {
-    padding: 0 25px 0 2px;
-  }
-
   .choose-dates .date-1,
   .choose-dates .date-2 {
     height: 40px;
@@ -284,6 +283,23 @@ h4 {
   .choose-dates .date-1,
   .choose-dates .date-2 {
     height: 40px;
+  }
+
+  .list-of-links {
+    padding: 0;
+
+    li p {
+      margin: 4px 0;
+    }
+
+    li a {
+      padding-left: 10px;
+    }
+
+    .icon {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
@@ -314,5 +330,22 @@ h4 {
   .choose-dates .date-1,
   .choose-dates .date-2 {
     height: 40px;
+  }
+
+  .list-of-links {
+    padding: 0;
+
+    li p {
+      margin: 2px 0;
+    }
+
+    li a {
+      padding-left: 0;
+    }
+
+    .icon {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
