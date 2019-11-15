@@ -21,7 +21,7 @@ body {
   height: 1000px;
 }
 
-.content-active {
+.content-to-right {
   margin-left: 180px;
 }
 
@@ -98,19 +98,19 @@ body {
 }
 
 @media (max-width: 767px) {
-  @include grid("sm");
+  @include grid('sm');
 }
 
 @media (min-width: 768px) {
-  @include grid("md");
+  @include grid('md');
 }
 
 @media (min-width: 992px) {
-  @include grid("lg");
+  @include grid('lg');
 }
 
 @media (min-width: 1200px) {
-  @include grid("xl");
+  @include grid('xl');
 }
 
 @mixin center {

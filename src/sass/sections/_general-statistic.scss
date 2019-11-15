@@ -11,15 +11,16 @@ h4 {
 }
 
 .choose-dates {
-  @include border-bottom;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
+  margin: 0 auto;
+  max-width: 530px;
 
   .date-1,
   .date-2 {
-    height: 60px;
+    height: 50px;
     width: 40%;
     display: flex;
     align-items: center;
@@ -62,8 +63,9 @@ h4 {
   p {
     padding-right: 60%;
     padding-left: 20px;
-    width: 90%;
-    font-size: 20px;
+    width: 80%;
+    font-size: 18px;
+    margin: 0;
   }
 
   img {
@@ -71,8 +73,8 @@ h4 {
   }
 
   .icon-refresh {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: #f58220;
     padding: 18px;
     border-radius: $radius;
@@ -84,11 +86,15 @@ h4 {
   }
 }
 
+.chart-section {
+  @include border-top;
+}
+
 .category-and-numbers-section {
   @include flex-center;
   display: flex;
   flex-direction: row;
-  padding: 50px 0;
+  padding: 30px 0;
 
   .col-1,
   .col-2 {
@@ -111,19 +117,20 @@ h4 {
   }
 
   p {
-    font-size: 20px;
+    font-size: 17px;
+    margin: 10px 0 0 0;
   }
 }
 
 .earnings-chart {
-  padding-top: 50px;
+  padding-top: 30px;
 
   h4 {
     padding: 15px 0;
   }
 
   img {
-    padding: 50px 0;
+    padding: 30px 0;
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -133,7 +140,7 @@ h4 {
 
 /* list of links */
 .links-article .container {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .list-of-links .row {
@@ -175,7 +182,7 @@ h4 {
 @media (max-width: 1440px) {
   // laptop
   .choose-dates p {
-    width: 90%;
+    width: 80%;
   }
 
   .choose-dates .date-2 .icon-calendar {
@@ -233,12 +240,12 @@ h4 {
     padding-top: 40px;
   }
 
-  .choose-dates .icon-refresh {
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    margin-right: 0;
-  }
+  // .choose-dates .icon-refresh {
+  //   height: 40px;
+  //   width: 40px;
+  //   padding: 10px;
+  //   margin-right: 0;
+  // }
 
   .choose-dates img {
     margin: 0 10px;
