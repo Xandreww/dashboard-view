@@ -78,10 +78,10 @@ h4 {
     background-color: #f58220;
     padding: 18px;
     border-radius: $radius;
-    transition: transform 0.6s ease-in-out;
+    transition: $transition;
 
     &:hover {
-      transform: rotate(360deg);
+      background-color: $color-orange-light;
     }
   }
 }
@@ -124,6 +124,8 @@ h4 {
 
 .earnings-chart {
   padding-top: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 
   h4 {
     padding: 15px 0;
