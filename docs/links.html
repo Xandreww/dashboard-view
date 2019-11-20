@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>project-dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sidebar-section sidebar-active" id="sidebar-active">
+      <div class="sidebar-heading">
+        <h1 class="sidebar-header">Just do it</h1>
+        <a href="#" id="hamburger-sidebar-on"><i class="fas fa-bars"></i></a>
+      </div>
+      <ul class="sidebar-list"><li>
+          <a href="index.html"><img class="icon mr-10" src="images/icons/general.svg" alt="icon"/> General</a>
+        </li>
+        <li>
+          <a href="details"><img class="icon mr-10" src="images/icons/details.svg" /> Details</a>
+        </li>
+        <li><a href="links.html"><img class="icon mr-10" src="images/icons/links.svg" /> Links</a>
+        </li>
+        <li>
+          <a href="banners"><img class="icon mr-10 mb-2" src="images/icons/banners.svg" /> Banners</a>
+        </li>
+        <li>
+          <a href="personal-data.html"><img class="icon mr-10 mb-5" src="images/icons/personaldata.svg" /> Personal Data</a>
+        </li>
+        <li>
+          <a href="payout"><img class="icon mr-10" src="images/icons/payout.svg" /> Payout</a>
+        </li>
+        <li>
+          <a href="postback"><img class="icon mr-10 mb-5" src="images/icons/postback.svg" /> Postback</a>
+        </li>
+      </ul>
+      <div class="sidebar-managers">
+        <h2>YOUR MANAGER</h2>
+        <div class="manager-section">
+          <a href="#" class="manager">
+            <img src="images/manager.png" alt="" />
+            <span class="dot-sidebar"></span>
+            <p>Mikhael E.</p>
+          </a>
+        </div>
+      </div>
+      <!-- nav list from top -->
+      <ul class="sidebar-list hide" id="sidebar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-button">
+            <img class="icon mr-10 mb-5" src="images/icons/wallet.svg" />
+            <p>$1,500.00</p>
+            <img class="icon icon-nav-arrow" src="images/icons/arrow-down-small.svg" />
+          </a>
+          <div class="dropdown-content">
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+          </div>
+        </li>
+        <li>
+          <a href=""
+            ><img class="icon mr-10" src="images/icons/profile.svg" />
+            <p>Leonardo Dicaprio</p></a
+          >
+        </li>
+        <li>
+          <div class="two-icons">
+            <a href=""><img class="icon" src="images/icons/quit.svg"/></a>
+            <a href="#" class="link-notification">
+              <img class="icon icon-notification" src="images/icons/notification.svg" />
+              <span class="dot"></span>
+            </a>
+          </div>
+        </li>
+        <!-- nav from top ends here -->
+      </ul>
+      <!-- sidebar section ends here -->
+    </section>
+    <section class="sidebar-section-closed" id="sidebar-closed">
+      <a href="#" id="hamburger-sidebar-off"><i class="fas fa-bars"></i></a>
+    </section>
+    <section class="content content-to-right" id="content">
+      <section class="nav" id="nav">
+        <ul class="nav-list">
+          <li>
+            <a href=""><img class="icon-nav" src="images/icons/quit.svg"/></a>
+          </li>
+          <li>
+            <a href=""><img class="icon-nav mr-10" src="images/icons/profile.svg" />Leonardo Dicaprio</a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon-nav icon-notification" src="images/icons/notification.svg" />
+              <span class="dot-nav"></span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">
+              <img class="icon-nav mr-10 mb-5" src="images/icons/wallet.svg" />
+              $1,500.00
+              <img class="icon-nav icon-nav-arrow" src="images/icons/arrow-down-small.svg" />
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="wrapper" id="wrapper">
+          <div class="border">
+            <article class="links-article">
+              <h3>LINKS</h3>
+              <div class="container">
+                <button class="button-orange">+ add new</button>
+                <ul class="list-of-links">
+                  <li>
+                    <div class="row border-top">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Home Page</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.homepage.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Currently offer</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.currentlyoffer.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Bluprix</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.bluprix.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Your Site</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.yoursite.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Google</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.google.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Facebook</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.facebook.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Dashboard</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.dashboard.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Blurax</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.bluraz.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Piece of Wine</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.pieceofwine.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-12">
+                        <p>Twitter</p>
+                      </div>
+                      <div class="col-md-5 col-sm-8">
+                        <a href="#">http://www.twitter.com</a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/links.svg"/></a>
+                      </div>
+                      <div class="col-md-1 col-sm-2">
+                        <a href="#"><img class="icon" src="images/icons/trash.svg"/></a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- list of links ends here -->
+                </ul>
+                <button class="button-orange">+ add new</button>
+              </div>
+              <!-- article-links ends here -->
+            </article>
+            <!-- second border ends here -->
+          </div>
+          <!-- general statistic section ends here -->
+        </section>
+        <!-- wrapper ends here -->
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
